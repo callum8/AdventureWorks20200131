@@ -19,7 +19,7 @@ SELECT
     ,sp.[Name] AS [StateProvinceName] 
     ,a.[PostalCode]
     ,cr.[Name] AS [CountryRegionName] 
-    ,p.[AdditionalContactInfo22]
+    ,p.[AdditionalContactInfo]
 FROM [HumanResources].[Employee] e
 	INNER JOIN [Person].[Person] p
 	ON p.[BusinessEntityID] = e.[BusinessEntityID]
